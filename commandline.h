@@ -19,6 +19,7 @@ public slots:
 
     void ReadSTDIN();
     void HandleSTDIN(QString Line);
+    void WriteSTDOUT(QString Line);
 
  private:
     QThread mThread;
