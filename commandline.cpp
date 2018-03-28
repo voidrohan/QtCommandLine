@@ -24,6 +24,16 @@ void CommandLine::ReadSTDIN()
 
 void CommandLine::HandleSTDIN(QString Line)
 {
-    qDebug() << Line;
+   // qDebug() << Line;
+
+    WriteSTDOUT("You Entered: " + Line + '\n');
+
+}
+
+void CommandLine::WriteSTDOUT(QString Line)
+{
+    QTextStream stream(stdout);
+
+    stream << Line;
 
 }
